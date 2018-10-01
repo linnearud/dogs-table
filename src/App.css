@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-navigation {
+  background-color: #dddddd;
+  display: inline-block;
+}
+
+.App-info {
+  font-size: 1-5em;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+
+.table-column {
+  text-align: left;
+  font-size: 9px;
+}
+
+.reactable-page-button {
+  color: #000000;
+  margin: 5px;
+}
+
+.reactable-next-page {
+  color: #000000;
+  margin: 5px;
+}
+
+.chart-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dogs-container {
+  margin: auto;
+}
+
+.dogs-chart {
+  float: left;
+  width:70%;
+}
+
+.recharts-surface {
+  padding-bottom: 90px;
+}
+
+.dogs-list {
+  float: right;
+  width: 30%;
+  padding-right: 10%;
+}
+
+.list-group-item {
+  font-size: 0.8em;
+  padding: 4px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

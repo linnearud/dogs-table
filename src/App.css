@@ -6,19 +6,6 @@
   height: 100px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-navigation {
-  background-color: #dddddd;
-  display: inline-block;
-}
-
-.App-info {
-  font-size: 1-5em;
-}
-
 .jumbotron {
   margin: 0;
   padding: 20px;
@@ -31,7 +18,7 @@
 
 .table-column {
   text-align: left;
-  font-size: 9px;
+  font-size: 0.7em;
 }
 
 .dogs-table-filter {
@@ -54,10 +41,6 @@
   margin-bottom: 10px;
 }
 
-.dogs-container {
-  margin: auto;
-}
-
 .dogs-chart {
   float: left;
   width:70%;
@@ -76,9 +59,4 @@
 .list-group-item {
   font-size: 0.8em;
   padding: 4px;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

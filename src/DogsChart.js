@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css'; 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell} from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell} from 'recharts';
 
 class DogsChart extends Component {
   groupBy = (arr, prop) => {

@@ -3,20 +3,19 @@ import './App.css';
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
 class DogsList extends Component {
-  render() {
-    function groupBy(arr, prop) {
-      return arr.reduce(function(groups, item) {
-        const val = item[prop]
-        groups[val] = groups[val] || []
-        groups[val].push(item)  
-        return groups
-      }, {})
-    }
+  groupBy = (arr, prop) => {
+    return arr.reduce(function(groups, item) {
+      const val = item[prop]
+      groups[val] = groups[val] || []
+      groups[val].push(item)
+      return groups
+    }, {})
+  }
 
-    let dogsArr = this.props.data || []
-    let groupedDogs = groupBy(dogsArr, 'DogName')
+  render() {
+    let groupedDogs = this.groupBy(this.props.data || [], 'DogName')
     let dogList = []
-    Object.keys(groupedDogs).map(function(key, index) {
+    Object.keys(groupedDogs).forEach(function(key) {
       dogList.push({x: key, y:groupedDogs[key].length})
     });
     dogList = dogList.sort(function(a, b){return b.y-a.y});

@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Reactable from 'reactable';  
+import {Table, Thead, Th} from 'reactable';  
 
 class DogsTable extends Component {
   render() {
-
-    var Table = Reactable.Table;
-    var Thead = Reactable.Thead;
-    var Th = Reactable.Th;
     let rows = this.props.data || []
 
     return (

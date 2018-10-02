@@ -34,6 +34,10 @@
   font-size: 9px;
 }
 
+.dogs-table-filter {
+  width: 70%;
+}
+
 .reactable-page-button {
   color: #000000;
   margin: 5px;

@@ -10,7 +10,10 @@ class DogsTable extends Component {
       <Table className="table" data={rows} 
         itemsPerPage={25}
         currentPage={0}
-        sortable={true}>
+        sortable={true}
+        filterable={['DogName', 'Breed', 'Color', 'LicenseType']}
+        filterPlaceholder="Filter Table"
+        filterClassName="dogs-table-filter">
         <Thead>
           <Th column="DogName" className="table-column">Dog Name</Th>
           <Th column="LicenseType" className="table-column">License Type</Th>

@@ -39,13 +39,11 @@ class App extends Component {
         <div className="App">
           {jumbo}
           {navbar}
-          <div className="dogs-container">
-            <div className="dogs-charts">
-              <DogsChart data={this.state.data} year={this.state.year}/>
-              <DogsList data={this.state.data} year={this.state.year}/>
-            </div>
-            <DogsTable data={this.state.data}/>
+          <div className="dogs-charts">
+            <DogsChart data={this.state.data} year={this.state.year}/>
+            <DogsList data={this.state.data} year={this.state.year}/>
           </div>
+          <DogsTable data={this.state.data}/>
         </div>
       );
     }else {

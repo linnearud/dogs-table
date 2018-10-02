@@ -4,7 +4,7 @@ import {Table, Thead, Th} from 'reactable';
 
 class DogsTable extends Component {
   render() {
-    let rows = this.props.data || []
+    let rows = this.props.data || [];
 
     return (
       <Table className="table" data={rows} 

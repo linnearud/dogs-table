@@ -5,18 +5,18 @@ import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell} from 'recharts'
 class DogsChart extends Component {
   groupBy = (arr, prop) => {
     return arr.reduce(function(groups, item) {
-      const val = item[prop]
-      groups[val] = groups[val] || []
-      groups[val].push(item)
-      return groups
-    }, {})
+      const val = item[prop];
+      groups[val] = groups[val] || [];
+      groups[val].push(item);
+      return groups;
+    }, {});
   }
 
   render() {
-    let groupedDogs = this.groupBy(this.props.data || [], 'Breed')
-    let barChartData = []
+    let groupedDogs = this.groupBy(this.props.data || [], 'Breed');
+    let barChartData = [];
     Object.keys(groupedDogs).forEach(function(key) {
-      barChartData.push({x: key, y:groupedDogs[key].length})
+      barChartData.push({x: key, y:groupedDogs[key].length});
     });
     barChartData = barChartData.sort(function(a, b){return b.y-a.y});
     barChartData = barChartData.slice(0,10);
@@ -32,8 +32,8 @@ class DogsChart extends Component {
             <Bar dataKey="y">
               {
               barChartData.map((entry, index) => {
-                const color = colors[index]
-                return <Cell fill={color} />;
+                const color = colors[index];
+                return <Cell fill={color} />
               })
             }
             </Bar>

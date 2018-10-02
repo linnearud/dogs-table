@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import logo from './IMG_2712.png';
-import { Jumbotron, Navbar, Nav, NavItem } from 'react-bootstrap'
+import { Jumbotron, Navbar, Nav, NavItem } from 'react-bootstrap';
 import './App.css';
-import DogsTable from './DogsTable'
-import DogsChart from './DogsChart'
-import DogsList from './DogsList'
-import * as d3 from 'd3-fetch'
+import DogsTable from './DogsTable';
+import DogsChart from './DogsChart';
+import DogsList from './DogsList';
+import * as d3 from 'd3-fetch';
 
 class App extends Component {
-  state = { data: null, year: null }
+  state = { data: null, year: null };
 
   yearSelected = (selectedKey) => {
     d3.csv("data/" + selectedKey + ".csv").then(data => {
-      this.setState({data: data, year: selectedKey})
-    })
+      this.setState({data: data, year: selectedKey});
+    });
   }
 
   render() {
